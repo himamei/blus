@@ -1,0 +1,14 @@
+server:
+  port: 8089
+
+spring:
+  datasource:
+    name: test
+    url: jdbc:mysql://127.0.0.1:3306/wpfsdata?useUnicode=true&characterEncoding=UTF8&serverTimezone=UTC&useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mapping/system/*Mapper.xml
+  type-aliases-package: com.lh.system.model
